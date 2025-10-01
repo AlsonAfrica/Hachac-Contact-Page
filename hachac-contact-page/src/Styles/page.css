@@ -1,0 +1,513 @@
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    gap:50px;
+}   
+.Hero{
+    width: 100%;
+    height:40vh;
+    background-color: #79c2d0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    column-gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .Hero {
+        height: 30vh;
+        font-size: 1.2rem;
+        column-gap: 10px;
+        padding: 10px;
+    }
+}
+
+.Main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    gap:10px;
+    padding:30px;
+}
+
+@media (max-width: 768px) {
+    .Main {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 10px 0;
+    }
+}
+
+.Line{
+    width: 1px;
+    height: 60%;
+    background-color:#bbbbbb;
+}
+
+@media (max-width: 768px) {
+    .Line {
+        width: 60%;
+        height: 1px;
+        margin: 0 auto;
+    }
+}
+
+.Contacts{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 254, 254, 0.842);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+    padding:10px;
+    border-radius: 25px;
+}
+.ContactContainer{
+    width: 100%;
+    height: 30%;
+    background-color: rgba(221, 214, 214, 0.842);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap:10px;
+    padding:10px;
+    border-radius: 25px;
+}
+
+.ContactCard {
+    background: #fff;
+    border-radius: 12px;
+    border: 1.5px solid #b0b0b0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: box-shadow 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    margin: 10px 0;
+    min-width: 0;
+    width: 100%;
+    max-width: 320px;
+    height: 90px;
+    gap: 10px;
+    text-wrap: wrap;
+    cursor: pointer;
+}
+
+     .footer-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .footer-brand {
+          margin-bottom: 30px;
+        }
+
+        .footer-brand h2 {
+          font-size: 28px;
+          font-weight: bold;
+          margin: 0;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+           background-image: url("../assets/pattern.jpg");
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .social-icons {
+          display: flex;
+          gap: 20px;
+          margin-bottom: 30px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        .social-icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #333;
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .social-icon:hover {
+          transform: translateY(-5px);
+        }
+
+        .social-icon.whatsapp {
+          background-color: #25D366;
+        }
+
+        .social-icon.whatsapp:hover {
+          background-color: #1fb855;
+        }
+
+        .social-icon.linkedin {
+          background-color: #0077B5;
+        }
+
+        .social-icon.linkedin:hover {
+          background-color: #006399;
+        }
+
+        .social-icon.instagram {
+          background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .social-icon.instagram:hover {
+          background: linear-gradient(45deg, #d67d2a 0%, #c5552f 25%, #b81e35 50%, #a81a54 75%, #9a0f6e 100%);
+        }
+
+        .social-icon svg {
+          width: 24px;
+          height: 24px;
+          fill: white;
+        }
+
+        .cultural-strip {
+          width: 100%;
+          height: 8px;
+          background: linear-gradient(to right, 
+            #FF0000 0%, 
+            #FF7F00 14.28%, 
+            #FFFF00 28.56%, 
+            #00FF00 42.84%, 
+            #0000FF 57.12%, 
+            #4B0082 71.4%, 
+            #9400D3 85.68%, 
+            #FF0000 100%
+          );
+          margin: 30px 0 20px;
+        }
+
+        .footer-bottom {
+          padding: 20px 0;
+          font-size: 14px;
+          color: #999;
+        }
+
+        @media (max-width: 768px) {
+          .Footer {
+            padding: 30px 15px 0;
+          }
+
+          .footer-brand h2 {
+            font-size: 24px;
+          }
+
+          .social-icon {
+            width: 45px;
+            height: 45px;
+          }
+
+          .social-icon svg {
+            width: 22px;
+            height: 22px;
+          }
+
+          .footer-bottom {
+            font-size: 12px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .footer-brand h2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+          }
+
+          .social-icons {
+            gap: 15px;
+          }
+
+          .social-icon {
+            width: 40px;
+            height: 40px;
+          }
+
+          .social-icon svg {
+            width: 20px;
+            height: 20px;
+          }
+
+          .cultural-strip {
+            height: 6px;
+          }
+        }
+
+@media (max-width: 500px) {
+    .ContactCard {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+        padding: 10px 6px;
+        gap: 6px;
+        min-width: 0;
+        text-align: center;
+        
+    }
+    .ContactInfo {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: 0;
+    }
+    .ContactType {
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 auto 2px auto; */
+        /* font-size: 1.4rem; */
+        /* min-width: 0; */
+    }
+    .ContactName {
+        font-size: 0.98rem;
+        white-space: normal;
+        text-align: center;
+    }
+    .ContactValue {
+        font-size: 0.92rem;
+        text-align: center;
+        word-break: break-word;
+    }
+    .Title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+.ContactCard:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+.ContactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    min-width: 0;
+}
+
+.ContactType {
+    font-size: 2.1rem;
+    color: #79c2d0;
+    margin: 0 0 2px 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+}
+
+.ContactName {
+    font-size: 0.90rem;
+    font-weight: 500;
+    margin: 0 0 2px 0;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+    display: block;
+}
+
+.ContactForm {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 24px;
+            /* margin-top: 32px;
+            max-width: 400px; */
+            height:70%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .FormGroup {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .FormGroup label {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .FormGroup input,
+        .FormGroup textarea {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+
+        .FormGroup input:focus,
+        .FormGroup textarea:focus {
+            border-color: #0078d4;
+        }
+
+        .SubmitButton {
+            background: #0078d4;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 0;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width:50%;
+            border-radius: 25px;
+            transition: background 0.2s;
+        }
+
+        .SubmitButton:hover {
+            background: #005fa3;
+        }
+        .FormInput {
+            margin-right: 8px;
+            box-shadow:  inset 2px 2px 5px #cccccc, inset -5px -5px 10px #ffffff;
+            width: 100%;
+            box-sizing: border-box;
+            transition: all 0.2s ease-in-out;
+            appearance: none;
+            -webkit-appearance: none;
+            border-radius: 25px;
+        }
+        label{
+            font-size: 0.90rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+.ContactValue {
+    font-size: 0.80rem;
+    color: #666;
+    margin: 0;
+    word-break: break-all;
+}
+
+
+
+@media (max-width: 768px) {
+    .ContactCard {
+        max-width: 100%;
+        height: auto;
+        padding: 12px 10px;
+    }
+    .ContactType {
+        font-size: 1.5rem;
+    }
+    .ContactName {
+        font-size: 1rem;
+    }
+
+    .ContactValue {
+            font-size: 0.80rem;
+            color: #666;
+            margin: 0;
+            word-break: break-all;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 180px;
+            display: block;
+    }
+    .Contacts {
+        width: 100%;
+        .ContactName, .ContactValue {
+            max-width: 120px;
+        }
+    }
+        /* height: auto;
+    min-height: 200px; */
+}
+
+.Map{
+   width: 50%;
+    height: 100%;
+    background-color: black;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+    .Map {
+        width: 100%;
+        height: 200px;
+        min-height: 150px;
+    }
+}
+
+.Footer{
+    width: 100%;
+    height: 30vh;
+    /* background-color: rgb(33, 177, 141); */
+
+       background-color: #ebe2e291;
+          color: #ffffff;
+          padding: 40px 20px 0;
+          font-family: Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .Footer {
+        height: 15vh;
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+.subtitle{
+    font: 3rem bold Halvetica, sans-serif;
+    font-weight: 700;
+    background-image: url("../assets/pattern.jpg");
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+.Title{
+    font: 5rem bold Halvetica, sans-serif;
+    font-weight: 700;
+    background-image: url("../assets/pattern.jpg");
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .Title {
+        font-size: 2.5rem;
+    }
+}
