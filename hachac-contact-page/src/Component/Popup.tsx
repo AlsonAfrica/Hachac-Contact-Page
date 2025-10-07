@@ -29,7 +29,7 @@ const Popup: React.FC<PopupProps> = ({ isOpen, onClose, children }) => {
         {/* Right section */}
         <div className="PopupRight">
           <img src={logo} alt="Hachac Logo" className="PopupLogo" />
-          <h2 className="PopupTitle">Hachac Foundation</h2>
+          <h2 className="PopupTitle">Hachac Foundation Contact Page</h2>
           <p className="PopupDesc">
             Helping children build careers and brighter futures. Join us in making a difference!
           </p>
